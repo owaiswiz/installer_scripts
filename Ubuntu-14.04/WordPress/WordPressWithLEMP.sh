@@ -72,8 +72,6 @@ server {
 EOF
 
 cat /etc/nginx/sites-available/default
-# Add PHP info
-echo "<?php phpinfo();?>" > /var/www/html/info.php
 # Configure Nginx sites-available
 cp /etc/nginx/sites-available/default /etc/nginx/sites-available/wordpress
 rm /etc/nginx/sites-available/default
